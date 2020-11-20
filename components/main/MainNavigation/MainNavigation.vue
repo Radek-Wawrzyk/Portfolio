@@ -11,11 +11,9 @@
         to="/"
         aria-label="Home"
         title="Home"
-        class="main-navigation__logo-link"
+        class="main-navigation__logo"
       >
-        <h1 class="main-navigation__logo-text">
-          Radoslaw Wawrzyk
-        </h1>
+        <logo-icon />
       </nuxt-link>
         
       <ul class="main-navigation__menu">
@@ -49,9 +47,13 @@
 
 <script>
 import throttle from 'lodash.throttle';
+import logoIcon from '~/assets/logo.svg';
 
 export default {
   name: 'MainNavigation',
+  components: {
+    logoIcon,
+  },
   data: () => ({
     isLoaded: false,
     showNavbar: true,

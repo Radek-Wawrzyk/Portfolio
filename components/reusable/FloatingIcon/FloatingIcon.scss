@@ -4,6 +4,7 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
+  pointer-events: none;
 
   &__inner {
     position: relative;
@@ -57,7 +58,7 @@
 
 @keyframes floating-3 {
   0% {
-    transform: translate3d(0, 2rem, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   50% {
