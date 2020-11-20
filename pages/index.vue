@@ -1,21 +1,18 @@
 <template>
-  <div class="container">
-   Portfolio
+  <div class="home" style="height: 5000px">
+    <main-header
+      heading="Innovation through Approach, Design & Developing"
+    >
+
+    </main-header>
   </div>
 </template>
 
 <script>
-export default {}
+import MainHeader from '~/components/main/MainHeader/MainHeader.vue'
+export default {
+  components: { MainHeader },
+  name: 'HomePage'
+}
 </script>
 
-<style lang="scss">
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: $primary;
-}
-</style>

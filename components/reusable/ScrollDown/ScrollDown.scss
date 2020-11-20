@@ -1,0 +1,36 @@
+.scroll-down {
+  position: absolute;
+  bottom: 8rem;
+  right: 0;
+  padding: 0.5rem 1rem ;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+
+  &:hover, &:focus {
+    cursor: pointer;
+    
+    .scroll-down__text {
+      color: $brand-primary;
+    }
+  }
+
+  &__line {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $text-color;
+    margin: 0 1rem 0 0;
+  }
+
+  &__text {
+    color: $text-color;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: color $time;
+  }
+}
