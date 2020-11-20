@@ -10,8 +10,6 @@
   border: none;
 
   &:hover, &:focus {
-    cursor: pointer;
-    
     .scroll-down__text {
       color: $brand-primary;
     }

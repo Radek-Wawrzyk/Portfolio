@@ -1,0 +1,19 @@
+.base-cursor {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  background-color: $brand-primary;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all $time;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+
+  &--hover {
+    transform: scale(3);
+    mix-blend-mode: difference;
+  }
+}
