@@ -1,0 +1,15 @@
+.about-page {
+  position: relative;
+
+  &__section {
+    margin: 0 0 9rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-page {
+    &__section {
+      margin: 0 0 5rem 0;
+    }
+  }
+}

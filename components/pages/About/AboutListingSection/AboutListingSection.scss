@@ -1,0 +1,50 @@
+.about-listing-section {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  &__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  &__content {
+    position: relative;
+    font-size: 1.1rem;
+    width: 50%;
+    line-height: 1.7rem;
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0 0 2rem 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1024px) {
+  .about-listing-section {
+    flex-direction: column;
+
+    &__heading {
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+
+    &__content {
+      width: 100%;
+
+      &-item {
+        flex-direction: column;
+      }
+    }
+  }
+}

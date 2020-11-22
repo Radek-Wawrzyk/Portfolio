@@ -1,0 +1,29 @@
+.prismic {
+  &-text {
+    line-height: 1.8rem;
+
+    &:empty {
+      padding: 0.5rem 0;
+    }
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-list {
+    position: relative;
+
+    &__item {
+      margin: 0 0 0.6rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .prismic {
+    &-text {
+      margin: 0 0 0.4rem 0;
+    }
+  }
+}

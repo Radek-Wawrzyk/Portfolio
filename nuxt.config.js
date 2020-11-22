@@ -12,6 +12,11 @@ export default {
     ]
   },
 
+  loading: {
+    color: '#ffffff',
+    height: '2px'
+  },
+
   css: [
     '@/styles/main.scss',
   ],
@@ -35,7 +40,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
+    '@nuxtjs/prismic',
   ],
+
+  prismic: {
+    endpoint: "https://radek-wawrzyk.prismic.io/api/v2",
+    htmlSerializer: '@/plugins/html-serializer',
+  },
 
   axios: {},
 
