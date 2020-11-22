@@ -11,6 +11,10 @@
   &--hidden {
     transform: translate3d(0, -100%, 0);
   }
+
+  &--scrolled {
+    background-color: $background;
+  }
   
   &__container {
     width: 100%;
@@ -50,7 +54,7 @@
       font-weight: bold;
       transition: all $time;
 
-      &:hover, &:focus {
+      &:hover, &:focus, &.nuxt-link-exact-active {
         color: $brand-primary;
       }
 
