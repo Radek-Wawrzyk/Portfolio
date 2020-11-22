@@ -6,13 +6,13 @@
     </div>
 
     <base-cursor />
+
+    <main-footer />
   </main>
 </template>
 
 <script>
-import BaseCursor from '~/components/base/BaseCursor/BaseCursor.vue';
 export default {
-  components: { BaseCursor },
   name: 'AppLayout',
 };
 </script>
