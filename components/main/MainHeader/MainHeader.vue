@@ -6,13 +6,19 @@
           {{ heading }}
         </h1>
       </div>
-      
-      <div class="main-header__info">
-
-      </div>
     </div>
 
-    <floating-icon
+    <!-- <img 
+      class="main-header__background" 
+      alt 
+      src="~/assets/images/back.png" 
+    /> -->
+
+   
+
+    <!-- <planet class="main-header__image" /> -->
+
+    <!-- <floating-icon
       left="15%"
       top="20%"
       icon="polygon"
@@ -57,17 +63,19 @@
       icon="music"
       top="40%"
       left="60%"
-    />
-
-    <scroll-down />
+    /> -->
+    <!-- <scroll-down /> -->
   </header>
 </template>
 
 <script>
-import FloatingIcon from '~/components/reusable/FloatingIcon/FloatingIcon.vue';
+import Planet from '~/assets/images/planet.svg';
+
 export default {
-  components: { FloatingIcon },
   name: 'MainHeader',
+  components: { 
+    Planet, 
+  }, 
   props: {
     heading: {
       type: [Number, String],

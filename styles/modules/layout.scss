@@ -25,7 +25,17 @@ html {
 }
 
 .app-layout {
+  position: relative;
+
   &__inner {
-    
+    position: relative;
+  }
+}
+
+// Media
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
   }
 }

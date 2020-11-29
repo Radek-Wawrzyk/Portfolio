@@ -1,0 +1,44 @@
+.base-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background-color: transparent;
+  border: 2px solid transparent;
+  min-height: 64px;
+  min-width: 160px;
+  transition: all $time;
+  outline: none;
+  color: $text-color;
+
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+  }
+
+  &--primary {
+    border-color: $text-color;
+
+    &:hover, &:focus {
+      background-color: $text-color;
+      color: $brand-secondary;
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 768px) {
+  .base-button {
+    min-height: 48px;
+    min-width: 100px;
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}

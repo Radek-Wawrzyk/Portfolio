@@ -1,0 +1,15 @@
+.home-page {
+  position: relative;
+
+  &__header {
+    margin: 0 0 4rem 0;
+  }
+
+  &__section {
+    margin: 0 0 4rem 0;
+
+    &--carousel {
+      margin: 0 0 8rem 0;
+    }
+  }
+}

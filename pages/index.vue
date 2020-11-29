@@ -1,18 +1,21 @@
 <template>
-  <div class="home" style="height: 5000px">
+  <div class="home-page">
     <main-header
       heading="Innovation through Approach, Design & Developing"
-    >
+      class="home-page__header"
+    />
 
-    </main-header>
+    <projects-carousel 
+      class="home-page__section home-page__section--carousel"
+      heading="Featured Work"
+    />
   </div>
 </template>
 
 <script>
-import MainHeader from '~/components/main/MainHeader/MainHeader.vue'
 export default {
-  components: { MainHeader },
   name: 'HomePage'
 }
 </script>
 
+<style lang="scss" src="./index.scss" />

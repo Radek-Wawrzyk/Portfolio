@@ -8,6 +8,7 @@
     <base-cursor />
 
     <main-footer />
+    <main-background />
   </main>
 </template>
 

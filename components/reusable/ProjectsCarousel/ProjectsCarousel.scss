@@ -1,0 +1,169 @@
+.projects-carousel {
+  position: relative;
+
+  .hooper {
+    height: auto;
+    outline: none !important;
+
+    &-track {
+      transition-timing-function: ease-in !important;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-text {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &-indicator {
+      padding: 0 0.25rem;
+      font-weight: bold;
+    }
+  }
+
+  &__header {
+    margin: 0 auto 4rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 4rem auto 0 auto;
+
+    &-button {
+      margin: 0 2rem 0 0 !important;
+
+      &:last-child {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    padding: 0 0 0 300px;
+  }
+
+  &__slide {
+    position: relative;
+    margin: 0 4rem 0 0;
+    transition: all $time--long;
+
+    &:hover, &:focus {
+      transform: scale(0.98) rotateY(2deg);
+    }
+
+    &.is-active {
+      .projects-carousel__slide-name {
+        opacity: 1;
+      }
+    }
+
+    &-name {
+      opacity: 0;
+      transition: all $time--long;
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+      color: $text-color;
+      font-size: 2rem;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    &-image-wrapper {
+      backface-visibility: hidden;
+      perspective: 1000;
+      transform: translateZ(0);
+    }
+
+    &-image {
+      filter: brightness(0.5);
+      pointer-events: none;
+      display: block;
+      height: 32vw;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1024px) {
+  .projects-carousel {
+    &__inner {
+      padding: 0 0 0 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-carousel {
+    &__header {
+      &-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__info {
+      &-text {
+        font-size: 0.8rem;
+      }
+    }
+
+    &__inner {
+      padding: 0 0 0 1rem;
+    }
+
+    &__slide {
+      margin: 0 1rem 0 0;
+
+      &-name {
+        font-size: 1rem;
+      }
+
+      &-image {
+        height: 40vw;
+      }
+    }
+
+    &__navigation {
+      justify-content: flex-start;
+
+      &-button {
+        margin: 0 1rem 0 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .projects-carousel {
+    &__header {
+      margin: 0 auto 2rem auto;
+    }
+
+    &__navigation {
+      margin: 2rem auto 0 auto;
+    }
+
+    &__info {
+      display: none;
+    }
+  }
+}

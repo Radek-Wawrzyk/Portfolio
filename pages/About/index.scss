@@ -13,3 +13,28 @@
     }
   }
 }
+
+.about-clients {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  &__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  &__list {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    align-items: center;
+    
+    &-image {
+      width: auto;
+      // filter: grayscale(100%);
+    }
+  }
+}

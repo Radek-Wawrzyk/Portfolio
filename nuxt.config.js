@@ -19,9 +19,15 @@ export default {
 
   css: [
     '@/styles/main.scss',
+    'hooper/dist/hooper.css',
   ],
 
-  plugins: [],
+  plugins: [
+    {
+      src: '~/plugins/siema.js',
+      mode: 'client',
+    },
+  ],
 
   components: true,
 
