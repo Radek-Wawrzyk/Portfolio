@@ -24,7 +24,8 @@
 
   &__image {
     position: absolute;
-    right: -30%;
+    width: 1000px;
+    right: -10%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -37,6 +38,42 @@
     &-heading {
       font-size: 5rem;
       font-weight: bold;
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1440px) {
+  .main-header {
+    &__content {
+      &-heading {
+        font-size: 4rem;
+      }
+    }
+
+    &__image {
+      width: 300px;
+      right: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-header {
+    height: auto;
+    padding: 12rem 0;
+
+    &__content {
+      &-heading {
+        font-size: 3rem;
+      }
+    }
+    
+    &__image {
+      position: static;
+      width: 300px;
+      transform: unset;
     }
   }
 }
